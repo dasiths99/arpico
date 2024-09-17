@@ -2,6 +2,4 @@
 
 ---- PHP data databsce tables -----
 
-
-update the file
-
+elearning.sql -- file php databsce file
