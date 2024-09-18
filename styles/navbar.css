@@ -1,0 +1,124 @@
+/* Reset browser default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Wrapper */
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header */
+header.wrapper {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+#banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#logo img {
+    width: 180px;
+}
+
+/* Navigation */
+#topnav {
+    background-color: #0099ff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-main-navigation {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-main-navigation li {
+    display: inline-block;
+}
+
+#menu-main-navigation li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#menu-main-navigation li a:hover {
+    background-color: #007acc;
+}
+
+/* Sign Up and Login Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+.login-btn {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.signup-btn:hover, .login-btn:hover {
+    background-color: #e64a19;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    #menu-main-navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #menu-main-navigation li {
+        width: 100%;
+    }
+
+    #menu-main-navigation li a {
+        padding: 15px;
+    }
+
+    /* Align Sign Up and Login buttons vertically in small screens */
+    .auth-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+}
